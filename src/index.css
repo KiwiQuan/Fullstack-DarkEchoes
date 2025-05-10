@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  background-color: rgb(14, 14, 14);
+  color: white;
+  min-height: 100vh;
+}
+
+header,
+main {
+  padding: 1.5rem;
+}
+
+main {
+  display: flex;
+}
+
+@media (max-width: 586px) {
+  main {
+    flex-direction: column;
+  }
+  #unselected {
+    width: 100%;
+  }
+}
