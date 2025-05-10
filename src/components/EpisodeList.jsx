@@ -1,7 +1,6 @@
 import "./EpisodeList.css";
-import { episodeList } from "../data";
 
-export default function EpisodeList({ selectedEpisode, setSelectedEpisode }) {
+export default function EpisodeList({ episodeList, setSelectedEpisode }) {
   return (
     <section className="episode-list">
       <h2>Episodes:</h2>

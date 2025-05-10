@@ -2,9 +2,11 @@ import "./index.css";
 import EpisodeList from "./components/EpisodeList";
 import EpisodeDetails from "./components/EpisodeDetails";
 import { useState } from "react";
+import { episodeList } from "./data";
 export default function App() {
   // TODO
   const [selectedEpisode, setSelectedEpisode] = useState(null);
+  const [episodes, setEpisodeList] = useState(episodeList);
   return (
     <>
       <header>
@@ -12,7 +14,7 @@ export default function App() {
       </header>
       <main>
         <EpisodeList
-          selectedEpisode={selectedEpisode}
+          episodeList={episodes}
           setSelectedEpisode={setSelectedEpisode}
         />
         <EpisodeDetails selectedEpisode={selectedEpisode} />
