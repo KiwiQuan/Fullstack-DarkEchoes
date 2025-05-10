@@ -12,6 +12,7 @@ export default function EpisodeDetails({ selectedEpisode }) {
       <h2>Episode {selectedEpisode.id}</h2>
       <h3>{selectedEpisode.title}</h3>
       <p>{selectedEpisode.description}</p>
+      <button> Watch now</button>
     </section>
   );
 }

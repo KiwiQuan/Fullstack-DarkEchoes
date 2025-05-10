@@ -11,7 +11,6 @@ export default function EpisodeList({ selectedEpisode, setSelectedEpisode }) {
             key={episode.id}
             onClick={() => {
               setSelectedEpisode(episode);
-              console.log(episode);
             }}
           >
             {episode.title}
